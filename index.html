@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>8 Reinas - Marco Rios</title>
+<link rel=stylesheet href=css/style.css>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css>
+<script src=js/function.js defer></script>
+</head>
+<body>
+<div class=container>
+<div class=panel>
+<p><strong>Selecciona el tipo de Reina:</strong></p>
+<div class=queen-picker>
+<label class=queen-option>
+<input type=radio name=queen checked onchange="tipoReyna=1">
+<i class="fas fa-chess-queen queen-icon tipo1"></i>
+<span>Clásica</span>
+</label>
+<label class=queen-option>
+<input type=radio name=queen onchange="tipoReyna=2">
+<i class="fas fa-user-ninja queen-icon tipo2"></i>
+<span>Ninja</span>
+</label>
+<label class=queen-option>
+<input type=radio name=queen onchange="tipoReyna=3">
+<i class="fas fa-robot queen-icon tipo3"></i>
+<span>Robot</span>
+</label>
+</div>
+<button onclick=solveEightQueens1()>Solución 1</button>
+<button onclick=solveEightQueens2()>Solución 2</button>
+<button onclick=solveEightQueens3()>Solución 3</button>
+<p><strong>Colores del tablero:</strong></p>
+<p>Color de celda clara:</p>
+<input type=color id=color1 value=#4169e1>
+<p>Color de celda oscura:</p>
+<input type=color id=color2 value=#ffffff>
+<button onclick=resetBoard()>Reiniciar Tablero</button>
+</div>
+<table class=tablero>
+<tr>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+</tr>
+<tr>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+</tr>
+<tr>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+</tr>
+<tr>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+</tr>
+<tr>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+</tr>
+<tr>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+</tr>
+<tr>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+</tr>
+<tr>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+<td onclick=cellClick(this)></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
